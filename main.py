@@ -1,7 +1,9 @@
 import keyboard
-
+import Utils.decorators as decorators
 from Objects.ui import UI
 import pygame
+
+@decorators.add_logger
 def main():
     pygame.init()
     pygame.mixer.init()

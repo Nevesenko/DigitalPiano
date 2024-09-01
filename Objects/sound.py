@@ -1,5 +1,5 @@
 import pygame
-from Utils.constants import *
+from Data.constants import *
 
 class Sound:
     def __init__(self):
@@ -15,7 +15,7 @@ class Sound:
         channel.play(tone)
 
     def _math_for_wave(self, frequency):
-        wave = AMPLITUDE_RATE * np.sin(RAD * frequency/2 * self.t)
+        wave = AMPLITUDE_RATE * np.sin(RAD * frequency / FREQUENCY_RATIO  * self.t)
         wave = np.int16(wave * INT16)
         # возможно стоит вписать преобразование tobinary()
         return wave
