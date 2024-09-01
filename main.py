@@ -7,10 +7,10 @@ import pygame
 def main():
     pygame.init()
     pygame.mixer.init()
-    manager = UI()
+    ui = UI()
 
     keyboard.hook(lambda event:
-                  manager.on_key_event(event)
+                  ui.on_key_event(event)
                   if event.event_type =='down' else None)
 
     keyboard.wait('esc')
@@ -18,3 +18,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
