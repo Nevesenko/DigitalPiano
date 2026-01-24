@@ -15,6 +15,7 @@ class Manager:
     def create_sound(self, keyName):
         '''создает ноту'''
         fr = self.tones.loc[keyName, 'frequency']
+        print(self.tones.frequency)
         self.sound.create_wave(fr)
 
     def change_the_scale(self):

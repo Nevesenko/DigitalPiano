@@ -1,16 +1,15 @@
 index name(unrelevant) frequency
 a c 261.63
-s none 300
-d d 311.13
-f none 330
-g e 349.23
-h f 369.99
-j none 380
-k g 392.00
-l none 400
-; a 466.16
-' b 523.26
-
+s none 311.13
+d d 329.63
+f none 	349.23
+g e 392.00
+h f 415.30
+j none 440.00
+k g 466.16
+l none 493.88
+; a 554.37
+' b 587.33
 
 
 

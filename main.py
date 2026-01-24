@@ -11,7 +11,7 @@ def main():
 
     keyboard.hook(lambda event:
                   ui.on_key_event(event)
-                  if event.event_type =='down' else None)
+                  if event.event_type == 'down' else None)
 
     keyboard.wait('esc')
 
